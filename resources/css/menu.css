@@ -1,0 +1,38 @@
+/* Stylesheet voor het hoofdmenu */
+
+/* hoofdstijl van het menu */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2F4443;
+}
+
+.menu-item {
+  float: left;
+}
+
+/* textstijl van menu items */
+.menu-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* zwart kleuren bij muis over */
+.menu-item a:hover {
+  background-color: #0621b9;
+  
+}
+
+/* stijl voor de het plaatje van home */
+li.menu-item img {
+  height: 24px;
+  width: auto;
+  max-width: 100%;
+  margin-top: -8px;
+  margin-bottom: -6px;
+}

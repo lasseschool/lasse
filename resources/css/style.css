@@ -1,0 +1,153 @@
+/* Stylesheet met algemene stylen */
+html {
+
+    min-height: 100%;
+    font-family: titillium web, sans-serif;
+    font-size: 100%;
+    text-rendering: geometricprecision;
+    color: white;
+
+}
+
+/* achtergrond van de pagina's */
+body {
+    /* background-image: url("../pictures/auto.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #80bbb8;
+}
+
+/* afbeeldingen met rode rand */
+.picture_centr_rrand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(168, 17, 17);
+}
+
+/* afbeeldingen met zwarte rand */
+.picture_centr_zrand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+
+p {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.headline {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+i {
+    text-align: center;
+    font-family: Verdana;
+}
+
+/* centreer de tabel */
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* rode randen om de tabel */
+th,
+td {
+    border: 3px solid rgb(145, 4, 4);
+    padding: 8px;
+    width: auto;
+}
+
+/* centreer video's */
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid rgb(158, 2, 2);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.scrolling-banner {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scrolling-banner p {
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* horizontale lijn */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+
+/* De mailto link geel */
+a.email-link {
+    color: yellow;
+    text-decoration: none;
+}
+
+a.email-link:hover {
+    text-decoration: underline;
+}
+
+/* gele text */
+.text-geel {
+    color: yellow;
+}
+
+/* groene text */
+.text-donkergroen {
+    color: #2F4443;
+}
+
+
+/* rose text */
+.text-rose {
+    color: rgb(221, 6, 174);
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+}

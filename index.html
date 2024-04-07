@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- home/index pagina van de F1Lasse website -->
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage F1Lasse</title>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/menu.css">
+</head>
+
+<body>
+
+  <!-- het hoofdmenu -->
+  <ul class="menu">
+    <li class="menu-item"><a class="active" href="index.html"><img src="resources/pictures/home.png" alt="home"></a></li>
+    <li class="menu-item"><a href="pagina2.html">Ervaring</a></li>
+    <li class="menu-item"><a href="pagina3.html">Websites</a></li>
+    <li class="menu-item"><a href="pagina4.html">Apps</a></li>
+    <li class="menu-item"><a href="pagina5.html">Info</a></li>
+  </ul>
+
+  <p class="header">Dagen tot verjaardag: <strong class="text-donkergroen" id="dagenTeGaan"></strong></p>
+
+  <script>
+    // JavaScript functie om aantal dagen van vandaag tot een datum
+    function dagenTotVerjaardag() {
+      var vandaag = new Date();
+      var aug24_2024 = new Date("2024-09-02");
+      var diff = aug24_2024 - vandaag;
+      var dag = 1000 * 60 * 60 * 24;
+      var dagenTot = Math.ceil(diff / dag);
+      return dagenTot;
+    }
+
+    // Het aantal dagen tot aan zandvoor op de site invullen
+    var dagenOver = dagenTotVerjaardag();
+    document.getElementById("dagenTeGaan").textContent = dagenOver;
+  </script>
+
+  <p class="headline">Bahrein maart 2023</p>
+  
+  <img src="resources/pictures/lasse.jpg" alt="lasse" width="600" class="picture_centr_zrand">
+
+
+  
+
+  <!-- footer met scrollende nieuws banner -->
+  <footer>
+    <div class="scrolling-banner">
+      <p>**** Thuisopdracht Software Developer - Lasse Westra - Waterlelie 75 - Drachten ****</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
